@@ -1,0 +1,197 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\AATOSHN\\source\\repos\\warehouse_management\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5267640A-A821-413F-A99F-E9333D52FAE4}|warehouse_management.csproj|c:\\users\\aatoshn\\source\\repos\\warehouse_management\\services\\iservices\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5267640A-A821-413F-A99F-E9333D52FAE4}|warehouse_management.csproj|solutionrelative:services\\iservices\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5267640A-A821-413F-A99F-E9333D52FAE4}|warehouse_management.csproj|c:\\users\\aatoshn\\source\\repos\\warehouse_management\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5267640A-A821-413F-A99F-E9333D52FAE4}|warehouse_management.csproj|solutionrelative:services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5267640A-A821-413F-A99F-E9333D52FAE4}|warehouse_management.csproj|c:\\users\\aatoshn\\source\\repos\\warehouse_management\\controllers\\purchaseordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5267640A-A821-413F-A99F-E9333D52FAE4}|warehouse_management.csproj|solutionrelative:controllers\\purchaseordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5267640A-A821-413F-A99F-E9333D52FAE4}|warehouse_management.csproj|c:\\users\\aatoshn\\source\\repos\\warehouse_management\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5267640A-A821-413F-A99F-E9333D52FAE4}|warehouse_management.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5267640A-A821-413F-A99F-E9333D52FAE4}|warehouse_management.csproj|c:\\users\\aatoshn\\source\\repos\\warehouse_management\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5267640A-A821-413F-A99F-E9333D52FAE4}|warehouse_management.csproj|solutionrelative:controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5267640A-A821-413F-A99F-E9333D52FAE4}|warehouse_management.csproj|c:\\users\\aatoshn\\source\\repos\\warehouse_management\\controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5267640A-A821-413F-A99F-E9333D52FAE4}|warehouse_management.csproj|solutionrelative:controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5267640A-A821-413F-A99F-E9333D52FAE4}|warehouse_management.csproj|c:\\users\\aatoshn\\source\\repos\\warehouse_management\\services\\inventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5267640A-A821-413F-A99F-E9333D52FAE4}|warehouse_management.csproj|solutionrelative:services\\inventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5267640A-A821-413F-A99F-E9333D52FAE4}|warehouse_management.csproj|c:\\users\\aatoshn\\source\\repos\\warehouse_management\\repository\\irepository\\iinventoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5267640A-A821-413F-A99F-E9333D52FAE4}|warehouse_management.csproj|solutionrelative:repository\\irepository\\iinventoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5267640A-A821-413F-A99F-E9333D52FAE4}|warehouse_management.csproj|c:\\users\\aatoshn\\source\\repos\\warehouse_management\\models\\invenotry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5267640A-A821-413F-A99F-E9333D52FAE4}|warehouse_management.csproj|solutionrelative:models\\invenotry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5267640A-A821-413F-A99F-E9333D52FAE4}|warehouse_management.csproj|c:\\users\\aatoshn\\source\\repos\\warehouse_management\\models\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5267640A-A821-413F-A99F-E9333D52FAE4}|warehouse_management.csproj|solutionrelative:models\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5267640A-A821-413F-A99F-E9333D52FAE4}|warehouse_management.csproj|c:\\users\\aatoshn\\source\\repos\\warehouse_management\\services\\iservices\\iinventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5267640A-A821-413F-A99F-E9333D52FAE4}|warehouse_management.csproj|solutionrelative:services\\iservices\\iinventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "C:\\Users\\AATOSHN\\source\\repos\\warehouse_management\\Services\\IServices\\IOrderService.cs",
+              "RelativeDocumentMoniker": "Services\\IServices\\IOrderService.cs",
+              "ToolTip": "C:\\Users\\AATOSHN\\source\\repos\\warehouse_management\\Services\\IServices\\IOrderService.cs",
+              "RelativeToolTip": "Services\\IServices\\IOrderService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T08:53:22.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\AATOSHN\\source\\repos\\warehouse_management\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "Services\\OrderService.cs",
+              "ToolTip": "C:\\Users\\AATOSHN\\source\\repos\\warehouse_management\\Services\\OrderService.cs",
+              "RelativeToolTip": "Services\\OrderService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T08:53:19.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PurchaseOrderController.cs",
+              "DocumentMoniker": "C:\\Users\\AATOSHN\\source\\repos\\warehouse_management\\Controllers\\PurchaseOrderController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PurchaseOrderController.cs",
+              "ToolTip": "C:\\Users\\AATOSHN\\source\\repos\\warehouse_management\\Controllers\\PurchaseOrderController.cs",
+              "RelativeToolTip": "Controllers\\PurchaseOrderController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T08:53:12.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\AATOSHN\\source\\repos\\warehouse_management\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Models\\Order.cs",
+              "ToolTip": "C:\\Users\\AATOSHN\\source\\repos\\warehouse_management\\Models\\Order.cs",
+              "RelativeToolTip": "Models\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T08:53:03.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\AATOSHN\\source\\repos\\warehouse_management\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\AATOSHN\\source\\repos\\warehouse_management\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Controllers\\OrderController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T08:52:58.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "InventoryController.cs",
+              "DocumentMoniker": "C:\\Users\\AATOSHN\\source\\repos\\warehouse_management\\Controllers\\InventoryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\InventoryController.cs",
+              "ToolTip": "C:\\Users\\AATOSHN\\source\\repos\\warehouse_management\\Controllers\\InventoryController.cs",
+              "RelativeToolTip": "Controllers\\InventoryController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABYAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T20:56:53.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IInventoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\AATOSHN\\source\\repos\\warehouse_management\\Repository\\IRepository\\IInventoryRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\IRepository\\IInventoryRepository.cs",
+              "ToolTip": "C:\\Users\\AATOSHN\\source\\repos\\warehouse_management\\Repository\\IRepository\\IInventoryRepository.cs",
+              "RelativeToolTip": "Repository\\IRepository\\IInventoryRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T05:18:33.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "InventoryService.cs",
+              "DocumentMoniker": "C:\\Users\\AATOSHN\\source\\repos\\warehouse_management\\Services\\InventoryService.cs",
+              "RelativeDocumentMoniker": "Services\\InventoryService.cs",
+              "ToolTip": "C:\\Users\\AATOSHN\\source\\repos\\warehouse_management\\Services\\InventoryService.cs",
+              "RelativeToolTip": "Services\\InventoryService.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAAADoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T05:16:05.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Invenotry.cs",
+              "DocumentMoniker": "C:\\Users\\AATOSHN\\source\\repos\\warehouse_management\\Models\\Invenotry.cs",
+              "RelativeDocumentMoniker": "Models\\Invenotry.cs",
+              "ToolTip": "C:\\Users\\AATOSHN\\source\\repos\\warehouse_management\\Models\\Invenotry.cs",
+              "RelativeToolTip": "Models\\Invenotry.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T05:15:37.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "location.cs",
+              "DocumentMoniker": "C:\\Users\\AATOSHN\\source\\repos\\warehouse_management\\Models\\location.cs",
+              "RelativeDocumentMoniker": "Models\\location.cs",
+              "ToolTip": "C:\\Users\\AATOSHN\\source\\repos\\warehouse_management\\Models\\location.cs",
+              "RelativeToolTip": "Models\\location.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T05:15:31.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IInventoryService.cs",
+              "DocumentMoniker": "C:\\Users\\AATOSHN\\source\\repos\\warehouse_management\\Services\\IServices\\IInventoryService.cs",
+              "RelativeDocumentMoniker": "Services\\IServices\\IInventoryService.cs",
+              "ToolTip": "C:\\Users\\AATOSHN\\source\\repos\\warehouse_management\\Services\\IServices\\IInventoryService.cs",
+              "RelativeToolTip": "Services\\IServices\\IInventoryService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T05:14:26.133Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

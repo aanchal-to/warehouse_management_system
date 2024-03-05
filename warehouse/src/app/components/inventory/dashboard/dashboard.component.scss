@@ -1,0 +1,15 @@
+
+.chart-container {
+    padding: 15px; /* Adds some padding inside each container */
+    background-color: #f8f9fa; /* Light background color for better contrast */
+    border-radius: 5px; /* Rounded corners for a softer look */
+    box-shadow: 0 2px 5px rgba(88, 22, 210, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Adds some space between the rows of charts */
+}
+
+.chart-container canvas {
+    max-width: 100%; /* Ensures the canvas does not exceed the container's width */
+    height: auto; /* Maintains the aspect ratio of the canvas */
+    display: block; /* Ensures the canvas is centered within the container */
+    margin: 0 auto; /* Centers the canvas horizontally */
+}

@@ -1,0 +1,46 @@
+
+
+
+    <div class="container h-100">
+      <div class="row h-100 justify-content-center align-items-center">
+          <div class="col-md-6">
+            <div class="outer-card">
+              <div class="card shadow r " style="background-color: #e9e9ef;">
+                
+                  <div class="card-body">
+                      <h2 class="card-title text-center">REGISTER</h2>
+                      <form [formGroup]="signupForm" (ngSubmit)="signup()">
+                          <div class="form-group">
+                              <label for="userName">Username:</label>
+                              <input type="text" id="userName" formControlName="userName" class="form-control" required>
+                          </div> 
+                          <div class="form-group">
+                              <label for="email">Email:</label>
+                              <input type="email" id="email" formControlName="email" class="form-control" required>
+                          </div>
+                          <div class="form-group">
+                              <label for="passwordHash">Password:</label>
+                              <input type="password" id="passwordHash" formControlName="passwordHash" class="form-control" required>
+                          </div>
+                          <div class="form-group text-dark">
+                            <label for="roles" class="bold-text">Role:</label>
+                            <select id="roles" formControlName="roles" class="form-control" required>
+                                <option value="Customer">Customer</option>
+                                <option value="Admin">Admin</option>
+                                <option value="Supplier">Supplier</option>
+                                <option value="Inventory">Vendor</option>
+                            </select>
+                        </div>
+                          <div class="form-group d-grid gap-2">
+                              <button type="submit" class="btn btn-outline-dark btn-block m-3">Sign Up</button>
+                          </div>
+                      </form>
+                      <p class="text-center">Already have an account? <a href="/login" class="text-secondary">Login</a></p>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  

@@ -1,0 +1,38 @@
+<p>add-order-details works!</p>
+<div class="container">
+    <h2>Add Order Details</h2>
+    <form [formGroup]="orderDetailsForm" (ngSubmit)="onSubmit()">
+       <div class="form-group">
+         <label for="orderId">Order ID</label>
+         <input type="text" formControlName="orderId" class="form-control" id="orderId">
+       </div>
+       <div class="form-group">
+         <label for="customerId">Customer ID</label>
+         <input type="text" formControlName="customerId" class="form-control" id="customerId">
+       </div>
+       <div class="form-group">
+         <label for="supplierId">Supplier ID</label>
+         <input type="text" formControlName="supplierId" class="form-control" id="supplierId">
+       </div>
+       <div class="form-group">
+         <label for="inventoryId">Inventory ID</label>
+         <input type="text" formControlName="inventoryId" class="form-control" id="inventoryId">
+       </div>
+       <div class="form-group">
+         <label for="item">Item</label>
+         <input type="text" formControlName="item" class="form-control" id="item">
+       </div>
+       <div class="form-group">
+         <label for="quantity">Quantity</label>
+         <input type="number" formControlName="quantity" class="form-control" id="quantity">
+       </div>
+       <div class="form-group">
+         <label for="status">Status</label>
+         <input type="text" formControlName="status" class="form-control" id="status">
+       </div>
+       <div class="form-group">
+         <button type="submit" class="btn btn-outline-primary m-3">Submit</button>
+         <button class="btn btn-outline-secondary" (click)="backToList()">Back</button>
+       </div>
+    </form>
+  </div>

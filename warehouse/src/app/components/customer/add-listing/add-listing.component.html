@@ -1,0 +1,39 @@
+
+       <!-- Place Your Order Form -->
+       <div class="col-md-9 col-xl-10 px-4">
+           <div class="container h-100">
+               <div class="row h-100 justify-content-center align-items-center">
+                   <div class="col-md-6">
+                       <div class="outer-card">
+                           <div class="card shadow" style="background-color: #f7f7fc;">
+                               <div class="card-body">
+                                   <h2 class="text-center mb-4">Place Your Order</h2>
+                                   <form [formGroup]="orderForm" (ngSubmit)="onPlaceOrder()">
+                                       <div class="mb-3">
+                                           <label for="item" class="form-label">Item:</label>
+                                           <input type="text" id="item" formControlName="orderItems" class="form-control" required>
+                                       </div>
+                                       <div class="mb-3">
+                                           <label for="quantity" class="form-label">Quantity:</label>
+                                           <input type="number" id="quantity" formControlName="quantity" class="form-control" required>
+                                       </div>
+                                       <button type="submit" class="btn btn-outline-dark btn-block m-3">Place Order</button>
+                                   </form>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+ 
+
+
+
+
+
+
+
+
+
+

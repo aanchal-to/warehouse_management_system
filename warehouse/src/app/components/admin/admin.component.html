@@ -1,0 +1,62 @@
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <span class="fs-5 d-none d-sm-inline">Menu</span>
+                </a>
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                    <li class="nav-item">
+                        <a href="/admin" class="nav-link align-middle px-0"> 
+                            <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline text-white">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/admin/inventory-table" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline text-white">Inventory</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/admin/supplier" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline text-white">Supplier</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/admin/order" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline text-white">Order Details</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/admin/customer" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline text-white">Customers</span>
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+            </div>
+            <!-- Admin dropdown moved outside of the flex-column div -->
+
+            <div class="fixed-bottom">
+
+                <div class="pb-4">
+                    <a href="#" class="d-flex align-items-center text-white text-decoration-none" aria-expanded="false">
+                        <img src="https://github.com/mdo.png" width="30" height="30" class="rounded-circle">
+                        <span class="d-none d-sm-inline mx-1">Admin</span>
+                    </a>
+                </div>
+    
+                <div class=" pb-4">
+                    <a href="/" class="d-flex align-items-center text-white text-decoration-none" aria-expanded="false">
+                        
+                        <span class="d-none d-sm-inline mx-1">LogOut</span>
+                    </a>
+                </div>
+
+            </div>
+           
+        </div>
+        <div class="col py-3">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

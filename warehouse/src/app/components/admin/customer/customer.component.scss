@@ -1,0 +1,21 @@
+.table-responsive {
+    max-width: 100%;
+}
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+.table th, .table td {
+    padding: 15px;
+}
+.table thead th {
+    background-color: #132735;
+    color: white;
+    border: none;
+}
+.table tbody tr:nth-child(even) {
+    background-color: #b9b9ba;
+}
+.table tbody tr:hover {
+    background-color: #9c9d9d;
+}

@@ -1,0 +1,31 @@
+.table-responsive {
+    max-width: 100%;
+}
+
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table th, .table td {
+    padding: 15px;
+}
+
+.table thead th {
+    background-color: #132735;
+    color: white;
+    border: none;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #b9b9ba;
+}
+
+.table tbody tr:hover {
+    background-color: #9c9d9d;
+}
+.custom-btn-size {
+    width: 100px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    padding: 5px 10px; /* Adjust padding if necessary */
+}

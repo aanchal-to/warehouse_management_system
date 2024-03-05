@@ -1,0 +1,25 @@
+
+<div class="history-container mt-4 mb-4 m-5">
+    <h2 class="text-center">Supplier Products</h2>
+    <div *ngIf="supplier && supplier.length > 0; else noHistory">
+        <div class="row mt-5">
+            <div class="col-md-4" *ngFor="let order of supplier">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Order ID: {{ order.supplierId }}</h5>
+                        <p class="card-text">
+                            Name: {{ order.name }} <br>
+                            Contact Person: {{ order.contactPerson }} <br>
+                            Item: {{ order.item }} <br>
+                            Quantity: {{ order.quantity }} <br>
+                            Status: {{ order.status ? 'Active' : 'Inactive' }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ng-template #noHistory>
+        <p>No order history available.</p>
+    </ng-template>
+</div>

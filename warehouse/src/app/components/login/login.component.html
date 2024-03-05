@@ -1,0 +1,87 @@
+
+   <div class="container h-100">
+    <div class="row h-100 justify-content-center align-items-center">
+        <div class="col-md-6">
+            <div class="outer-card">
+            <div class="card shadow" style="background-color: #e9e9ef;">
+                <div class="card-body">
+                    <h2 class="card-title text-center">LOGIN</h2>
+                    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                        <div class="form-group">
+                            <label for="userName">UserName:</label>
+                            <input type="text" id="userName" formControlName="userName" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" formControlName="password" class="form-control" required>
+                        </div>
+                        <div class="form-group text-dark">
+                            <label for="roles" class="bold-text">Role:</label>
+                            <select id="roles" formControlName="role" class="form-control" required>
+                                <option value="Customer">Customer</option>
+                                <option value="Admin">Admin</option>
+                                <option value="Supplier">Supplier</option>
+                                <option value="Inventory">Vendor</option>
+                            </select>
+                        </div>
+                        <div class="form-group d-grid gap-2">
+                            <button type="submit" class="btn btn-outline-dark btn-block m-3">Login</button>
+                        </div>
+                    </form>
+                    <p class="text-center">Don't have an account? <a href="/register" class="text-secondary">Register</a></p>
+                </div>
+            </div>
+        </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+    <!-- <div class="container h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-md-6">
+                <div class="outer-card">
+                    <div class="card shadow" style="background-color: #e9e9ef;">
+                        <div class="card-body">
+                            <h2 class="card-title text-center">LOGIN</h2>
+                            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="needs-validation" novalidate>
+                                <div class="form-group">
+                                    <label for="userName">UserName:</label>
+                                    <input type="text" id="userName" formControlName="userName" class="form-control" required>
+                                    <div class="invalid-feedback">Please enter your username.</div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password:</label>
+                                    <input type="password" id="password" formControlName="password" class="form-control" required>
+                                    <div class="invalid-feedback">Please enter your password.</div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="roles" class="bold-text">Role:</label>
+                                    <select id="roles" formControlName="role" class="form-control" required>
+                                        <option value="">Select role</option>
+                                        <option value="Seller">Customer</option>
+                                        <option value="Admin">Supplier</option>
+                                        <option value="Staff">Staff</option>
+                                        <option value="Admin">Admin</option>
+                                    </select>
+                                    <div class="invalid-feedback">Please select a role.</div>
+                                </div>
+                                <div class="form-group d-grid gap-2">
+                                    <button type="submit" class="btn btn-outline-dark btn-block m-3">Login</button>
+                                </div>
+                            </form>
+                            <p class="text-center">Don't have an account? <a href="/register" class="text-secondary">Register</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+ 
+
