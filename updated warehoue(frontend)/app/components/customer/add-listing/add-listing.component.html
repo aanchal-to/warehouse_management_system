@@ -1,0 +1,87 @@
+<div class="col-md-9 col-xl-10 px-4">
+    <div class="container h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-md-6">
+                <div class="outer-card">
+                    <div class="card shadow" style="background-color: #f7f7fc;">
+                        <div class="card-body">
+                            <h2 class="text-center mb-4">Place Your Order</h2>
+                            <form [formGroup]="orderForm" (ngSubmit)="onPlaceOrder()">
+                                <div class="mb-3">
+                                    <label for="item" class="form-label">Item:</label>
+                                    <input type="text" id="item" formControlName="orderItems" class="form-control"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="quantity" class="form-label">Quantity:</label>
+                                    <input type="number" id="quantity" formControlName="quantity" class="form-control"
+                                        required>
+                                </div>
+                                <button type="submit" class="btn btn-outline-dark btn-block m-3">Place Order</button>
+                            </form>
+
+                            <!-- <div *ngIf="showMsg" class="alert alert-success mt-3">
+                                <strong>Order added successfully!</strong>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div *ngIf="matchingSuppliers.length > 0">
+    <h2>Matching Suppliers</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Supplier ID</th>
+                <th>Name</th>
+                <th>Contact Person</th>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let supplier of matchingSuppliers">
+                <td>{{ supplier.supplierId }}</td>
+                <td>{{ supplier.name }}</td>
+                <td>{{ supplier.contactPerson }}</td>
+                <td>{{ supplier.item }}</td>
+                <td>{{ supplier.quantity }}</td>
+                <td>{{ supplier.status ? 'Active' : 'Inactive' }}</td>
+                <td>
+                    <button (click)="selectSupplier(supplier)">Select Supplier</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div *ngIf="selectedSupplier" class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="mb-0">Order Details for {{ selectedSupplier.name }}</h2>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between mb-3">
+                        <p class="mb-0">Customer ID: {{ customerId }}</p>
+                        <p class="mb-0">Order ID: {{ orderId }}</p>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <p class="mb-0">Order Items: {{ orderForm.get('orderItems').value }}</p>
+                        <p class="mb-0">Quantity: {{ orderForm.get('quantity').value }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

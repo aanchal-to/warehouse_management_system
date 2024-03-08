@@ -1,0 +1,57 @@
+<div class="container">
+    <h2 class="my-4 text-center">Layout</h2>
+    <!-- Search by Rack, Aisle, and Shelf -->
+    <div class="row">
+        <!-- Search by Rack -->
+        <div class="col-md-4">
+            
+            <input type="text" #rackInput class="form-control mb-2" placeholder="Enter rack">
+            <button (click)="searchInventoryByRack(rackInput.value)" class="btn btn-outline-primary">Search</button>
+        </div>
+
+        <!-- Search by Aisle -->
+        <div class="col-md-4">
+            
+            <input type="text" #aisleInput class="form-control mb-2" placeholder="Enter aisle">
+            <button (click)="searchInventoryByAisle(aisleInput.value)" class="btn btn-outline-primary">Search</button>
+        </div>
+
+        <!-- Search by Shelf -->
+        <div class="col-md-4">
+            
+            <input type="text" #shelfInput class="form-control mb-2" placeholder="Enter shelf">
+            <button (click)="searchInventoryByShelf(shelfInput.value)" class="btn btn-outline-primary">Search</button>
+        </div>
+    </div>
+
+    <!-- Display Search Results -->
+    <div *ngIf="inventories.length > 0" class="mt-4">
+        <h2>Search Results</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Inventory ID</th>
+                    <th>Item</th>
+                    <th>SKU</th>
+                    <th>Quantity</th>
+                    <th>Aisle</th>
+                    <th>Shelf</th>
+                    <th>Rack</th>
+                    <th>Batch</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let inventory of inventories">
+                    <td>{{ inventory.inventoryId }}</td>
+                    <td>{{ inventory.item }}</td>
+                    <td>{{ inventory.sku }}</td>
+                    <td>{{ inventory.quantity }}</td>
+                    <td>{{ inventory.locationDetails.aisle }}</td>
+                    <td>{{ inventory.locationDetails.shelf }}</td>
+                    <td>{{ inventory.locationDetails.rack }}</td>
+                    <td>{{ inventory.batch }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

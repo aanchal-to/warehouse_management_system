@@ -1,0 +1,18 @@
+img{
+    opacity: 0.5;
+}
+.btn-primary{
+    background-color: black;
+    color: white;
+    height: 60px;
+    width: 100px;
+}
+.btn-primary:hover {
+    background-color: rgb(205, 199, 199);
+    color: rgb(23, 24, 29);
+}
+ 
+.custom-btn-width {
+    width: 150px;
+    text-align: center;
+}

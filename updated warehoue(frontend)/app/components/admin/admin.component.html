@@ -1,0 +1,51 @@
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+            <div class=" navb d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                <a href="/admin" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <img src="https://github.com/mdo.png" width="30" height="30" class="rounded-circle">
+                    <span class="fs-5 d-none d-sm-inline"><h2>Admin</h2></span>
+                </a>
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                    <li class="nav-item">
+                        <a href="/admin" class="nav-link align-middle px-0"> 
+                            <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline text-white">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/admin/inventory-table" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline text-white">Inventory</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/admin/supplier" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline text-white">Supplier</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/admin/order" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline text-white">Order Details</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/admin/customer" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline text-white">Customers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline text-white">LogOut</span>
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+
+            </div>
+           
+          
+        </div>
+        <div class="col py-3">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

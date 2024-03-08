@@ -1,0 +1,18 @@
+<div *ngIf="orderDetails">
+    <h2>Order Details</h2>
+    <p>Order ID: {{ orderDetails.purchaseOrderId }}</p>
+    <p>Item: {{ orderDetails.item }}</p>
+    <p>Quantity: {{ orderDetails.quantity }}</p>
+    <p>Order Date: {{ orderDetails.orderDate }}</p>
+   
+    <!-- Update form -->
+    <form [formGroup]="updateForm" (ngSubmit)="onUpdateSubmit()">
+       <input formControlName="item" placeholder="Item">
+       <input formControlName="quantity" placeholder="Quantity">
+       <input formControlName="orderDate" placeholder="Order Date">
+       <button type="submit">Update Order</button>
+    </form>
+   
+    <button (click)="deleteOrder()">Delete Order</button>
+   </div>
+   

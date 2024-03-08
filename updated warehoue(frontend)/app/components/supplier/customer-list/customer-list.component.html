@@ -1,0 +1,55 @@
+<div class="customer-list">
+    <h2>Customer List</h2>
+    <div *ngIf="customerData && customerData.length > 0; else noCustomerData">
+        <div class="row mt-5">
+            <div class="col-md-4" *ngFor="let customer of customerData">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Order ID: {{ customer.orderId }}</h5>
+                        <p class="card-text">
+                            Customer ID: {{ customer.customerId }} <br>
+                            Order Items: {{ customer.orderItems }} <br>
+                            Quantity: {{ customer.quantity }} 
+                            <button  class="btn btn-primary"   (click)="details(customer.orderId,customer.customerId,customer.orderItems, customer.quantity)">Add</button>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <ng-template #noCustomerData>
+        <p>No customer data available.</p>
+    </ng-template>
+</div>
+
+<!-- 
+<div *ngIf="orderId && customerId && supplierId" class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="mb-0">Order Details for Supplier {{ supplierId }}</h2>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between mb-3">
+                        <p class="mb-0">Customer ID: {{ customerId }}</p>
+                        <p class="mb-0">Order ID: {{ orderId }}</p>
+                    </div>
+                  Display other order details as needed -->
+                <!-- </div>
+            </div>
+        </div>
+    </div>
+</div> --> 
+
+
+<!-- <div *ngIf="supplierId && orderId && customerId">
+    <h2>Order Details</h2>
+    <p>Supplier ID: {{ supplierId }}</p>
+    <p>Order ID: {{ orderId }}</p>
+    <p>Customer ID: {{ customerId }}</p>
+    <button (click)="updateOrderDetails('newSupplierId', 'newOrderId', 'newCustomerId')">Update Order Details</button>
+   </div>
+    -->

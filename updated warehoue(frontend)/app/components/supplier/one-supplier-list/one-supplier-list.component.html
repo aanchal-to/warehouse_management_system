@@ -1,0 +1,66 @@
+<div class="history-container mt-4 mb-4 m-5">
+    <h1 class="text-center mb-3">Products List</h1>
+    <div class="table-responsive">
+        <table class="table table-striped table-hover w-100">
+            <thead class="thead-dark">
+                <tr>
+                    <!-- <th>Supplier ID</th> -->
+                    <th>Name</th>
+                    <th>Contact Person</th>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <ng-container *ngIf="supplier && supplier.length > 0; else noHistory">
+                    <tr *ngFor="let order of supplier">
+                        <!-- <td>{{ order.supplierId }}</td> -->
+                        <td>{{ order.name }}</td>
+                        <td>{{ order.contactPerson }}</td>
+                        <td>{{ order.item }}</td>
+                        <td>{{ order.quantity }}</td>
+                        <td>{{ order.status ? 'Active' : 'Inactive' }}</td>
+
+                        <td>
+                            <button class="btn btn-outline-danger m-3 custom-btn" (click)="deleteSupplier(order.supplierId)">Delete</button>
+                            <button class="btn btn-outline-success custom-btn" (click)="editSupplier(order.supplierId)">Edit</button>
+                          </td>
+                    </tr>
+                </ng-container>
+            </tbody>
+        </table>
+    </div>
+    <ng-template #noHistory>
+        <p>No order history available.</p>
+    </ng-template>
+</div>
+
+
+<div *ngIf="editingSupplierId" class="edit-order-form">
+    <form [formGroup]="supplierForm" (ngSubmit)="onSubmit()" class="bg-light p-4 rounded">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" formControlName="name">
+      </div>
+      <div class="form-group">
+        <label for="contactPerson">Contact Person</label>
+        <input type="text" class="form-control" id="contactPerson" formControlName="contactPerson">
+      </div>
+      <div class="form-group">
+        <label for="item">Item</label>
+        <input type="text" class="form-control" id="item" formControlName="item">
+      </div>
+      <div class="form-group">
+        <label for="quantity">Quantity</label>
+        <input type="number" class="form-control" id="quantity" formControlName="quantity">
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="status" formControlName="status">
+        <label class="form-check-label" for="status">Status</label>
+      </div>
+      <button type="submit" class="btn btn-outline-primary custom-btn m-3">Update</button>
+      <button type="button" class="btn btn-outline-secondary custom-btn" (click)="cancelEdit()">Cancel</button>
+    </form>
+  </div>

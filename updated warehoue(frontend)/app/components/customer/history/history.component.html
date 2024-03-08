@@ -1,0 +1,78 @@
+<!-- <div class="col-md-9 col-xl-10 px-4">
+    <div class="history-container mt-4 mb-4 m-5">
+        <h2 class="text-center">Order History</h2>
+        <div *ngIf="customer && customer.length > 0; else noHistory">
+            <div class="row mt-5">
+                <div class="col-md-4" *ngFor="let order of customer">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Order ID: {{ order.orderId }}</h5>
+                            <p class="card-text">
+                                Item: {{ order.orderItems }} <br>
+                                Quantity: {{ order.quantity }}
+                                <br>
+                                <button (click)="deleteOrderHistory(order.orderId)"
+                                    class="btn btn-outline-danger mt-4">Delete Order</button>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ng-template #noHistory>
+            <p>No order history available.</p>
+        </ng-template>
+    </div>
+</div> -->
+
+<div class="col-md-9 col-xl-10 px-4">
+    <div class="history-container mt-4 mb-4 m-5">
+        <h2 class="text-center">Order History</h2>
+        <div *ngIf="customer && customer.length > 0; else noHistory">
+            <div class="row mt-5">
+                <div class="col-md-4" *ngFor="let order of customer">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Order ID: {{ order.orderId }}</h5>
+                            <p class="card-text">
+                                Item: {{ order.orderItems }} <br>
+                                Quantity: {{ order.quantity }}
+                                <br>
+                                <button (click)="editCustomer(order.orderId)"
+                                    class="btn btn-outline-primary mt-4 ">Edit Order</button>
+                                    &nbsp;
+                                <button (click)="deleteOrderHistory(order.orderId)"
+                                    class="btn btn-outline-danger mt-4">Delete Order</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ng-template #noHistory>
+            <p>No order history available.</p>
+        </ng-template>
+    </div>
+
+    <!-- Update Order Form -->
+    <div *ngIf="editingOrderId !== null" class="update-order-container mt-4 mb-4 m-5">
+        <h2 class="text-center">Update Order</h2>
+        <form [formGroup]="orderForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="orderId">Order ID</label>
+                <input type="text" class="form-control" id="orderId" formControlName="orderId" readonly>
+            </div>
+            <div class="form-group">
+                <label for="item">Item</label>
+                <input type="text" class="form-control" id="item" formControlName="orderItems">
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity</label>
+                <input type="number" class="form-control" id="quantity" formControlName="quantity">
+            </div>
+            <button type="submit" class="btn btn-outline-primary ml-2" [disabled]="!orderForm.valid">Update Order</button>
+            <button type="button" class="btn btn-outline-secondary ml-2" (click)="cancelEdit()">Cancel</button>
+        </form>
+    </div>
+</div>

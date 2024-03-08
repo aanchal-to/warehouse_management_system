@@ -1,0 +1,32 @@
+<p>add-order works!</p>
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h2>Add Order</h2>
+        <form [formGroup]="purchaseOrderForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="purchaseOrderId">PurchaseOrder ID:</label>
+            <input id="purchaseOrderId" type="text" class="form-control" formControlName="purchaseOrderId">
+          </div>
+
+          <div class="form-group">
+            <label for="item">Item:</label>
+            <input id="item" type="text" class="form-control" formControlName="item">
+          </div>
+          
+          <div class="form-group">
+            <label for="quantity">Quantity:</label>
+            <input id="quantity" type="number" class="form-control" formControlName="quantity">
+          </div>
+
+          <div class="form-group">
+            <label for="item">OrderDate:</label>
+            <input id="item" type="date" class="form-control" formControlName="orderDate">
+          </div>
+
+          <button type="submit"  class="btn btn-primary" >Submit</button>
+        </form>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+
+<div class="customer-list">
+    <h2>Order Details</h2>
+    <div *ngIf="customerData && customerData.length > 0; else noCustomerData">
+        <div class="row mt-5">
+            <div class="col-md-4" *ngFor="let orderDetail of orderDetails">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Order Item: {{ orderDetail.item }} </h5>
+                        <p class="card-text">
+                            Supplier ID: {{orderDetail.supplierId}} <br>
+                            <!-- Customer ID: {{ orderDetail.customerId }} <br> -->
+                            Order ID: {{ orderDetail.orderId }}
+                            <br>
+                            Quantity: {{ orderDetail.quantity }} <br>
+                            Inventory: {{orderDetail.inventoryId}} <br>
+                            Status: {{orderDetail.status}} <br>
+                           
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <ng-template #noCustomerData>
+        <p>No customer data available.</p>
+    </ng-template>
+</div>

@@ -1,0 +1,35 @@
+
+.custom-button {
+    width: 100px; 
+    height: 40px;
+   }
+   .table-responsive {
+    max-width: 100%;
+}
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+.table th, .table td {
+    padding: 15px;
+}
+.table thead th {
+    background-color: #132735;
+    color: white;
+    border: none;
+}
+.table tbody tr:nth-child(even) {
+    background-color: #b9b9ba;
+}
+.table tbody tr:hover {
+    background-color: #9c9d9d;
+}
+.edit-order-form {
+    margin-top: 20px;
+}
+.form-group label {
+    font-weight: bold;
+}
+.btn-outline-danger, .btn-outline-success {
+    margin-right: 5px;
+}

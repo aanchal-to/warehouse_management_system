@@ -1,0 +1,30 @@
+/* Custom CSS for the edit form */
+.edit-supplier-form {
+    max-width: 500px;
+    margin: 20px auto;
+   }
+   
+   /* Optional: Add a background color to the table rows */
+   .table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+   }
+
+   .custom-button {
+    width: 100px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+   }
+   html, body {
+    height: 100%;
+    margin: 0;
+   }
+   
+   .container-fluid {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+   }
+   
+   .row {
+    flex: 1;
+   }
+   
